@@ -36,3 +36,9 @@ namespace EmployeeManagementSystem.Data
         public string WorkedHour { get; set; }
     }
 }
+
+ public class EmployeeManagementContext : DbContext
+    {
+        public DbSet<Employee> Employees { get; set; }
+    }
+}
